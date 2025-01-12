@@ -1,10 +1,28 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
-  "license": "MIT",
+  "name": "nuxt-ym",
   "type": "module",
+  "version": "1.0.0",
+  "description": "A lightweight module for integrating Yandex.Metrika into Nuxt, enabling easy analytics setup and tracking user interactions",
+  "author": "Nick Risinger <boozy044@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/NickRisinger/nuxt-yandex-metrika#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickRisinger/nuxt-yandex-metrika.git"
+  },
+  "bugs": "https://github.com/NickRisinger/nuxt-yandex-metrika/issues",
+  "keywords": [
+    "nuxt",
+    "yandex",
+    "metrika",
+    "yandex-metrika",
+    "analytics",
+    "nuxt-module",
+    "web-analytics",
+    "nuxtjs",
+    "tracking",
+    "nuxt-analytics"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",

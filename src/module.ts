@@ -3,6 +3,7 @@ import { defu } from 'defu';
 
 declare global {
 	interface Window {
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		ym: ((...args: any[]) => void) & { a: any[]; l: number };
 	}
 }

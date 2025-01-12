@@ -1,5 +1,9 @@
 export default defineNuxtConfig({
 	modules: ['../src/module'],
 	devtools: { enabled: true },
-	yandexMetrika: {},
+	yandexMetrika: {
+		counters: {
+			1: {},
+		},
+	},
 });

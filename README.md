@@ -1,3 +1,5 @@
+![Nuxt Yandex Metrika module](./.github/social-card.png)
+
 # Nuxt Yandex Metrika
 
 [![npm version][npm-version-src]][npm-version-href]

@@ -3,7 +3,7 @@ import { defineNuxtPlugin, useRuntimeConfig, useServerHead } from '#imports';
 export default defineNuxtPlugin(() => {
 	const config = useRuntimeConfig();
 
-	const { counters } = config.public.ym;
+	const { counters } = config.public.yandexMetrika;
 
 	useServerHead({
 		link: [

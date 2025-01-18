@@ -3,7 +3,7 @@ import { defineNuxtPlugin, useRuntimeConfig } from '#imports';
 export default defineNuxtPlugin(() => {
 	const config = useRuntimeConfig();
 
-	const { counters } = config.public.ym;
+	const { counters } = config.public.yandexMetrika;
 
 	for (const [counterId, counterOptions] of Object.entries(counters)) {
 		window.ym(counterId, 'init', counterOptions);

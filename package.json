@@ -1,16 +1,26 @@
 {
   "name": "nuxt-ym",
   "type": "module",
-  "version": "1.0.1",
+  "version": "0.1.1",
   "description": "A lightweight module for integrating Yandex.Metrika into Nuxt, enabling easy analytics setup and tracking user interactions",
-  "author": "Nick Risinger <boozy044@gmail.com>",
+  "author": {
+    "name": "Yandex Unofficial 🔦",
+    "url": "https://github.com/yandex-unofficial"
+  },
+  "contributors": [
+    {
+      "name": "Nick Risinger",
+      "url": "https://github.com/NickRisinger",
+      "email": "boozy044@gmail.com"
+    }
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/NickRisinger/nuxt-yandex-metrika#readme",
+  "homepage": "https://github.com/yandex-unofficial/nuxt-yandex-metrika#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NickRisinger/nuxt-yandex-metrika.git"
+    "url": "git+https://github.com/yandex-unofficial/nuxt-yandex-metrika.git"
   },
-  "bugs": "https://github.com/NickRisinger/nuxt-yandex-metrika/issues",
+  "bugs": "https://github.com/yandex-unofficial/nuxt-yandex-metrika/issues",
   "keywords": [
     "nuxt",
     "yandex",

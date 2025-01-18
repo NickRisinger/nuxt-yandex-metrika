@@ -42,7 +42,7 @@ npm install --save-dev nuxt-ym
 
 ```ts
 export default defineNuxtConfig({
-  modules: ["nuxt-yandex-metrika"],
+  modules: ['nuxt-yandex-metrika'],
 });
 ```
 
@@ -52,10 +52,10 @@ That's it! You can now use My Module in your Nuxt app ✨
 
 ```ts
 export default defineNuxtConfig({
-  modules: ["nuxt-yandex-metrika"],
+  modules: ['nuxt-yandex-metrika'],
   yandexMetrika: {
-    counters: {},
-    debug: process.env.NODE_ENV !== "production",
+    counters: [],
+    debug: process.env.NODE_ENV !== 'production',
   }
 });
 ```

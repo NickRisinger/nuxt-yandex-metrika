@@ -3,13 +3,15 @@ import { defineNuxtPlugin, useRuntimeConfig } from '#imports';
 export default defineNuxtPlugin(() => {
 	const config = useRuntimeConfig();
 
-	const { counters } = config.public.ym;
+	const { counters } = config.public.yandexMetrika;
 
-	for (const [counterId, counterOptions] of Object.entries(counters)) {
-		window.ym(counterId, 'init', counterOptions);
+	counters.forEach((counter) => {
+		const { id, ...counterOptions } = counter;
 
-		document.addEventListener(`yacounter${counterId}inited`, () => {
-			console.log(`Счетчик yaCounter${counterId} можно использовать`, counterOptions);
+		window.ym(id, 'init', counterOptions);
+
+		document.addEventListener(`yacounter${id}inited`, () => {
+			console.log(`Счетчик yaCounter${id} можно использовать`, counterOptions);
 		}, { once: true });
-	}
+	});
 });

@@ -1,9 +1,7 @@
-import type { CounterId, CounterOptions } from './yandex-metrika';
-
-export type YandexMetrikaCounters = { [key: CounterId]: CounterOptions };
+import type { CounterOptions } from './yandex-metrika';
 
 export interface YandexMetrikaOptions {
-	counters: YandexMetrikaCounters;
+	counters: CounterOptions[];
 }
 
 export interface YandexMetrikaPublicRuntimeConfig {

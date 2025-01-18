@@ -23,8 +23,8 @@ export default defineNuxtPlugin(() => {
 							(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");`,
 			},
 		],
-		noscript: Object.keys(counters).map(id => ({
-			innerHTML: `<div><img src="https://mc.yandex.ru/watch/${id}" style="position:absolute; left:-9999px;" alt="" /></div>`,
+		noscript: counters.map(counter => ({
+			innerHTML: `<div><img src="https://mc.yandex.ru/watch/${counter.id}" style="position:absolute; left:-9999px;" alt="" /></div>`,
 		})),
 	});
 });

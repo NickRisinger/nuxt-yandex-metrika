@@ -24,7 +24,7 @@ export default defineNuxtModule<ModuleOptions>({
 		},
 	},
 	defaults: {
-		counters: {},
+		counters: [],
 	},
 	setup(options, nuxt) {
 		const resolver = createResolver(import.meta.url);
@@ -34,7 +34,7 @@ export default defineNuxtModule<ModuleOptions>({
 			options,
 		);
 
-		if (Object.keys(options.counters).length) {
+		if (options.counters.length) {
 			addPlugin({
 				src: resolver.resolve('./runtime/plugins/plugin.server.ts'),
 				mode: 'server',

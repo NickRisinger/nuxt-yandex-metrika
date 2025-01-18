@@ -4,11 +4,11 @@ import { setup, $fetch } from '@nuxt/test-utils/e2e';
 
 describe('server features', async () => {
 	const yandexMetrikaConfig = {
-		counters: {
-			1: {},
-			2: {},
-			3: {},
-		},
+		counters: [
+			{ id: 1 },
+			{ id: 1 },
+			{ id: 1 },
+		],
 	};
 
 	await setup({
@@ -30,8 +30,8 @@ describe('server features', async () => {
 
 	it('includes Yandex Metrika tracking pixels for each counter', async () => {
 		const html = await $fetch('/');
-		Object.keys(yandexMetrikaConfig.counters).forEach((id) => {
-			expect(html).toContain(`<img src="https://mc.yandex.ru/watch/${id}"`);
+		yandexMetrikaConfig.counters.forEach((counter) => {
+			expect(html).toContain(`<img src="https://mc.yandex.ru/watch/${counter.id}"`);
 		});
 	});
 });

@@ -1,6 +1,5 @@
-export type CounterId = number | string;
-
 export interface CounterOptions {
+	id: number;
 	accurateTrackBounce?: boolean | number;
 	childIframe?: boolean;
 	clickmap?: boolean;

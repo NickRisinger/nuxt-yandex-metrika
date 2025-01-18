@@ -25,6 +25,8 @@ export default defineNuxtModule<ModuleOptions>({
 	},
 	defaults: {
 		counters: [],
+		debug: false,
+		linkMetricsService: 'https://mc.yandex.ru/metrika/tag.js',
 	},
 	setup(options, nuxt) {
 		const resolver = createResolver(import.meta.url);
@@ -34,16 +36,16 @@ export default defineNuxtModule<ModuleOptions>({
 			options,
 		);
 
-		if (options.counters.length) {
-			addPlugin({
-				src: resolver.resolve('./runtime/plugins/plugin.server.ts'),
-				mode: 'server',
-			});
+		if (!options.counters.length) return;
 
-			addPlugin({
-				src: resolver.resolve('./runtime/plugins/plugin.client.ts'),
-				mode: 'client',
-			});
-		}
+		addPlugin({
+			src: resolver.resolve('./runtime/plugins/plugin.server.ts'),
+			mode: 'server',
+		});
+
+		addPlugin({
+			src: resolver.resolve('./runtime/plugins/plugin.client.ts'),
+			mode: 'client',
+		});
 	},
 });

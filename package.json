@@ -1,10 +1,10 @@
 {
-  "name": "@yandex-unofficial/nuxt-yandex-metrika",
+  "name": "nuxt-ym",
   "type": "module",
   "version": "0.1.1",
   "description": "A lightweight module for integrating Yandex.Metrika into Nuxt, enabling easy analytics setup and tracking user interactions",
   "author": {
-    "name": "Yandex Unofficial 🧊",
+    "name": "Yandex Unofficial 🔦",
     "url": "https://github.com/yandex-unofficial"
   },
   "contributors": [

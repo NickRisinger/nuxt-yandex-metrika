@@ -26,16 +26,16 @@ A lightweight module for integrating [Yandex.Metrika](https://metrika.yandex.ru/
 
 ```bash
 # Using nuxi
-npx nuxi module add @yandex-unofficial/nuxt-yandex-metrika
+npx nuxi module add nuxt-ym
 
 # Using pnpm
-pnpm add -D @yandex-unofficial/nuxt-yandex-metrika
+pnpm add -D nuxt-ym
 
 # Using yarn
-yarn add --dev @yandex-unofficial/nuxt-yandex-metrika
+yarn add --dev nuxt-ym
 
 # Using npm
-npm install --save-dev @yandex-unofficial/nuxt-yandex-metrika
+npm install --save-dev nuxt-ym
 ```
 
 2. Add nuxt-yandex-metrika to the modules section of nuxt.config.ts
@@ -54,7 +54,7 @@ That's it! You can now use My Module in your Nuxt app ✨
 export default defineNuxtConfig({
   modules: ['nuxt-yandex-metrika'],
   yandexMetrika: {
-    counters: {},
+    counters: [],
     debug: process.env.NODE_ENV !== 'production',
   }
 });
@@ -93,14 +93,14 @@ export default defineNuxtConfig({
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@yandex-unofficial/nuxt-yandex-metrika/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/@yandex-unofficial/nuxt-yandex-metrika
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-ym/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/nuxt-ym
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@yandex-unofficial/nuxt-yandex-metrika.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/@yandex-unofficial/nuxt-yandex-metrika
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-ym.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npm.chart.dev/nuxt-ym
 
-[license-src]: https://img.shields.io/npm/l/@yandex-unofficial/nuxt-yandex-metrika.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/@yandex-unofficial/nuxt-yandex-metrika
+[license-src]: https://img.shields.io/npm/l/nuxt-ym.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://npmjs.com/package/nuxt-ym
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

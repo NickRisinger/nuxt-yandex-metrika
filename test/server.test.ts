@@ -36,7 +36,7 @@ describe('server features', async () => {
 		});
 	});
 
-	it('includes Yandex Metrika tracking pixels for each counter', async () => {
+	it('includes a link to the script for Yandex Metrica', async () => {
 		const html = await $fetch('/');
 		expect(html).toContain(yandexMetrikaConfig.linkMetricsService);
 	});

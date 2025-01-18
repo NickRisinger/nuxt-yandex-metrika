@@ -9,6 +9,7 @@ describe('server features', async () => {
 			{ id: 1 },
 			{ id: 1 },
 		],
+		linkMetricsService: 'https://mc.yandex.ru/metrika/tag.js',
 	};
 
 	await setup({
@@ -33,5 +34,10 @@ describe('server features', async () => {
 		yandexMetrikaConfig.counters.forEach((counter) => {
 			expect(html).toContain(`<img src="https://mc.yandex.ru/watch/${counter.id}"`);
 		});
+	});
+
+	it('includes Yandex Metrika tracking pixels for each counter', async () => {
+		const html = await $fetch('/');
+		expect(html).toContain(yandexMetrikaConfig.linkMetricsService);
 	});
 });

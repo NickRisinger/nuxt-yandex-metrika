@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.1.2
+
+[compare changes](https://github.com/yandex-unofficial/nuxt-yandex-metrika/compare/v0.1.1...v0.1.2)
+
+### 📖 Documentation
+
+- Update module documentation ([9b70669](https://github.com/yandex-unofficial/nuxt-yandex-metrika/commit/9b70669))
+
+### 🏡 Chore
+
+- **release:** V0.1.1 ([2cadd2a](https://github.com/yandex-unofficial/nuxt-yandex-metrika/commit/2cadd2a))
+- Preparing the release v0.1.0 ([47f7143](https://github.com/yandex-unofficial/nuxt-yandex-metrika/commit/47f7143))
+- **lining:** Update eslint rules ([7b5858f](https://github.com/yandex-unofficial/nuxt-yandex-metrika/commit/7b5858f))
+
+### ❤️ Contributors
+
+- NickRisinger <boozy044@gmail.com>
+
 ## v0.1.1
 
 

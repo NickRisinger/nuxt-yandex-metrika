@@ -1,7 +1,7 @@
 {
   "name": "nuxt-ym",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A lightweight module for integrating Yandex.Metrika into Nuxt, enabling easy analytics setup and tracking user interactions",
   "author": {
     "name": "Yandex Unofficial 🔦",

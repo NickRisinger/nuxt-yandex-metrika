@@ -16,9 +16,9 @@ A lightweight module for integrating [Yandex.Metrika](https://metrika.yandex.ru/
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- ⛰ &nbsp;Simple setup
+- 🚠 &nbsp;Automatic tag connection
+- 🌲 &nbsp;Support for multiple counters
 
 ## Quick Setup
 
@@ -54,7 +54,25 @@ That's it! You can now use My Module in your Nuxt app ✨
 export default defineNuxtConfig({
   modules: ['nuxt-yandex-metrika'],
   yandexMetrika: {
-    counters: [],
+    counters: [
+      {
+        id: <CointerId>,
+        accurateTrackBounce?: false,
+        childIframe?: false,
+        clickmap?: false,
+        defer?: false,
+        ecommerce?: false,
+        params?: {},
+        userParams?: {},
+        trackHash?: false,
+        trackLinks?: false,
+        trustedDomains?: [],
+        type?: 0,
+        webvisor?: false,
+        triggerEvent?: false,
+        sendTitle?: false,
+      }
+    ],
     debug: process.env.NODE_ENV !== 'production',
   }
 });

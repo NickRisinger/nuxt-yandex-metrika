@@ -5,14 +5,11 @@ import type { YandexMetrikaOptions, YandexMetrikaPublicRuntimeConfig } from './r
 
 declare global {
 	interface Window {
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		ym: ((...args: any[]) => void) & { a: any[]; l: number };
 	}
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface ModuleOptions extends YandexMetrikaOptions {}
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface ModulePublicRuntimeConfig extends YandexMetrikaPublicRuntimeConfig {}
 
 export default defineNuxtModule<ModuleOptions>({

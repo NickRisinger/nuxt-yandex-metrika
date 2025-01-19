@@ -9,4 +9,7 @@ export default createConfigForNuxt({
 			semi: true,
 		},
 	},
+}).overrideRules({
+	'@typescript-eslint/no-empty-object-type': 'off',
+	'@typescript-eslint/no-explicit-any': 'warn',
 });
